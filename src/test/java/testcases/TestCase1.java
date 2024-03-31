@@ -13,33 +13,33 @@ public class TestCase1 {
 	
 	@BeforeTest
 	public void createDBConn() {
-		System.out.println("Creating Db Connection");
+		System.out.println("Creating Db Connection --> Before test");
 	}
 	
 	@AfterTest
 	public void closeDBConn() {
-		System.out.println("Closing DB Connection");
+		System.out.println("Closing DB Connection--> After test");
 	}
 	
 	@BeforeMethod
 	public void launchBrowser() {
-		System.out.println("Launching browser");
+		System.out.println("Launching browser --> Before method");
 	}
 	
 	@AfterMethod
 	public void closeBrowser() {
-		System.out.println("Closing browser");
+		System.out.println("Closing browser --> After Method");
 		
 	}
 	
 	@Test(priority=1)
 	public void doUserRegistration() {
-		System.out.println("Executing the User registration test");
+		System.out.println("Executing the User registration test --> Test-1");
 	}
 
 	@Test(priority=2)
 	public void doLogin() {
-		System.out.println("Executing the login test");
+		System.out.println("Executing the login test--> Test-2");
 	}
 	
 	
