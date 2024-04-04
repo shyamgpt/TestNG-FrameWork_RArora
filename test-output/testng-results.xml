@@ -1,45 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-31T17:58:41 IST" name="Default suite" finished-at="2024-03-31T17:58:41 IST" duration-ms="110">
+  <suite started-at="2024-04-04T18:38:29 IST" name="Functional Suite" finished-at="2024-04-04T18:38:29 IST" duration-ms="299">
     <groups>
+      <group name="functional">
+        <method signature="TestCase1.doUserRegistration()[pri:1, instance:testcases.TestCase1@2ed2d9cb]" name="doUserRegistration" class="testcases.TestCase1"/>
+        <method signature="TestCase1.doLogin()[pri:2, instance:testcases.TestCase1@2ed2d9cb]" name="doLogin" class="testcases.TestCase1"/>
+        <method signature="TestCase3.doUserRegistration()[pri:1, instance:testcases.TestCase3@537f60bf]" name="doUserRegistration" class="testcases.TestCase3"/>
+        <method signature="TestCase3.doLogin()[pri:2, instance:testcases.TestCase3@537f60bf]" name="doLogin" class="testcases.TestCase3"/>
+        <method signature="TestCase3.thirdTest()[pri:3, instance:testcases.TestCase3@537f60bf]" name="thirdTest" class="testcases.TestCase3"/>
+      </group> <!-- functional -->
+      <group name="smoke">
+        <method signature="TestCase3.doUserRegistration()[pri:1, instance:testcases.TestCase3@537f60bf]" name="doUserRegistration" class="testcases.TestCase3"/>
+        <method signature="TestCase3.doLogin()[pri:2, instance:testcases.TestCase3@537f60bf]" name="doLogin" class="testcases.TestCase3"/>
+        <method signature="TestCase3.thirdTest()[pri:3, instance:testcases.TestCase3@537f60bf]" name="thirdTest" class="testcases.TestCase3"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-03-31T17:58:41 IST" name="Default test" finished-at="2024-03-31T17:58:41 IST" duration-ms="110">
+    <test started-at="2024-04-04T18:38:29 IST" name="Login Test" finished-at="2024-04-04T18:38:29 IST" duration-ms="100">
       <class name="testcases.TestCase1">
-        <test-method is-config="true" signature="createDBConn()[pri:0, instance:testcases.TestCase1@2c1b194a]" started-at="2024-03-31T17:58:41 IST" name="createDBConn" finished-at="2024-03-31T17:58:41 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createDBConn -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.TestCase1@2c1b194a]" started-at="2024-03-31T17:58:41 IST" name="launchBrowser" finished-at="2024-03-31T17:58:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="doUserRegistration()[pri:1, instance:testcases.TestCase1@2c1b194a]" started-at="2024-03-31T17:58:41 IST" name="doUserRegistration" finished-at="2024-03-31T17:58:41 IST" duration-ms="18" status="PASS">
+        <test-method signature="doUserRegistration()[pri:1, instance:testcases.TestCase1@2ed2d9cb]" started-at="2024-04-04T18:38:29 IST" name="doUserRegistration" finished-at="2024-04-04T18:38:29 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doUserRegistration -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestCase1@2c1b194a]" started-at="2024-03-31T17:58:41 IST" name="closeBrowser" finished-at="2024-03-31T17:58:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.TestCase1@2c1b194a]" started-at="2024-03-31T17:58:41 IST" name="launchBrowser" finished-at="2024-03-31T17:58:41 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="doLogin()[pri:2, instance:testcases.TestCase1@2c1b194a]" started-at="2024-03-31T17:58:41 IST" name="doLogin" finished-at="2024-03-31T17:58:41 IST" duration-ms="2" status="PASS">
+        <test-method signature="doLogin()[pri:2, instance:testcases.TestCase1@2ed2d9cb]" started-at="2024-04-04T18:38:29 IST" name="doLogin" finished-at="2024-04-04T18:38:29 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestCase1@2c1b194a]" started-at="2024-03-31T17:58:41 IST" name="closeBrowser" finished-at="2024-03-31T17:58:41 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDBConn()[pri:0, instance:testcases.TestCase1@2c1b194a]" started-at="2024-03-31T17:58:41 IST" name="closeDBConn" finished-at="2024-03-31T17:58:41 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDBConn -->
       </class> <!-- testcases.TestCase1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Test -->
+    <test started-at="2024-04-04T18:38:29 IST" name="validate Ttile Test" finished-at="2024-04-04T18:38:29 IST" duration-ms="3">
+    </test> <!-- validate Ttile Test -->
+    <test started-at="2024-04-04T18:38:29 IST" name="Dependency Test" finished-at="2024-04-04T18:38:29 IST" duration-ms="51">
+      <class name="testcases.TestCase3">
+        <test-method signature="doUserRegistration()[pri:1, instance:testcases.TestCase3@537f60bf]" started-at="2024-04-04T18:38:29 IST" name="doUserRegistration" finished-at="2024-04-04T18:38:29 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User is not registeres succesfully]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User is not registeres succesfully
+at org.testng.Assert.fail(Assert.java:111)
+at testcases.TestCase3.doUserRegistration(TestCase3.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doUserRegistration -->
+        <test-method signature="doLogin()[pri:2, instance:testcases.TestCase3@537f60bf]" started-at="2024-04-04T18:38:29 IST" name="doLogin" finished-at="2024-04-04T18:38:29 IST" depends-on-methods="testcases.TestCase3.doUserRegistration" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testcases.TestCase3.doLogin() on instance testcases.TestCase3@537f60bf depends on not successfully finished methods 
+[testcases.TestCase3.doUserRegistration() on instance testcases.TestCase3@537f60bf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testcases.TestCase3.doLogin() on instance testcases.TestCase3@537f60bf depends on not successfully finished methods 
+[testcases.TestCase3.doUserRegistration() on instance testcases.TestCase3@537f60bf]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="thirdTest()[pri:3, instance:testcases.TestCase3@537f60bf]" started-at="2024-04-04T18:38:29 IST" name="thirdTest" finished-at="2024-04-04T18:38:29 IST" depends-on-methods="testcases.TestCase3.doUserRegistration" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+      </class> <!-- testcases.TestCase3 -->
+    </test> <!-- Dependency Test -->
+  </suite> <!-- Functional Suite -->
 </testng-results>

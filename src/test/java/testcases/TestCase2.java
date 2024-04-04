@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestCase2 {
 	
-	@Test
+	@Test(groups="smoke")
 	public void validateTitles() {
 		
 		String expected_title = " Google.com";

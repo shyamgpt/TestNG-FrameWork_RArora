@@ -32,12 +32,12 @@ public class TestCase1 {
 		
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, groups="functional")
 	public void doUserRegistration() {
 		System.out.println("Executing the User registration test --> Test-1");
 	}
 
-	@Test(priority=2)
+	@Test(priority=2, groups="functional")
 	public void doLogin() {
 		System.out.println("Executing the login test--> Test-2");
 	}
