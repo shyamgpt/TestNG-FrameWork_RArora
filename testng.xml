@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Functional Suite">
+
+	<listeners>
+		<listener class-name="customListeners.Listeners"></listener>
+
+	</listeners>
+
+	<!-- 
+	
 	<groups>
-		<run>
+		<run>--> 
 			<!--<include name="bvt"></include> -->
-			<include name="functional"></include>
+			<!-- <include name="functional"></include>-->
 			<!-- <exclude name="bvt"></exclude>-->
-		</run>
-	</groups>
+	<!-- 	</run>
+	</groups>-->
+	
 	<test name="Login Test">
 		<classes>
 			<class name="testcases.TestCase1" />
@@ -27,6 +36,15 @@
 		<classes>
 
 			<class name="testcases.TestCase3" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="failure Test">
+		<classes>
+
+			<class name="testcases.TestFailure" />
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

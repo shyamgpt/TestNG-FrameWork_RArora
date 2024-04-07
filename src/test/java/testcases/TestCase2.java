@@ -5,7 +5,7 @@ package testcases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCase2 {
+public class TestCase2 extends testBase {
 	
 	@Test(groups="smoke")
 	public void validateTitles() {
