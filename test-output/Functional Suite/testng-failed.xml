@@ -8,6 +8,8 @@
     <classes>
       <class name="testcases.TestCase2">
         <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="validateTitles"/>
         </methods>
       </class> <!-- testcases.TestCase2 -->
@@ -18,6 +20,8 @@
       <class name="testcases.TestCase3">
         <methods>
           <include name="doLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="doUserRegistration"/>
         </methods>
       </class> <!-- testcases.TestCase3 -->
@@ -27,6 +31,8 @@
     <classes>
       <class name="testcases.TestFailure">
         <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="doLogin"/>
         </methods>
       </class> <!-- testcases.TestFailure -->
