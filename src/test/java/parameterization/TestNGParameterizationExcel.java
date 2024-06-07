@@ -19,6 +19,7 @@ public class TestNGParameterizationExcel {
 	
 	
 	@Test(dataProvider="getData")
+//	public void testData(String SheetName, String intColNum,String intRowNum) {
 	public void testData(String username, String passowrd,String id) {
 		System.out.println(username+"----"+passowrd+"-->"+id);
 		
@@ -63,5 +64,7 @@ public class TestNGParameterizationExcel {
 		return data;
 		
 	}
+	
+	
 
 }
